@@ -14,7 +14,7 @@ public class ArraywaveForm{
         arr[i] = arr[i+1];
         arr[i+1] = temp;
          
-      }
+      }m 
     }
     public static void swap(int arr[], int a, int b){
        int temp = arr[a];

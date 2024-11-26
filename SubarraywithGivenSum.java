@@ -1,0 +1,22 @@
+public class SubarraywithGivenSum {
+    public static int subarraygivensum(int arr[], int target){
+        int temp[] = new int[arr.length];
+        int count = 0;
+        int sum = 0;
+
+        for (int i = 1; i < arr.length; i++) {
+            sum = arr[count] + arr[i];
+            count++;
+            if (sum == target) {
+               
+            }
+        }
+        temp = count;
+    }
+    public static void main(String[] args) {
+        int arr[] =  { 15, 2, 4, 8, 9, 5, 10, 23};
+        int target = 23;
+      // int result = subarraygivensum(arr, target);
+       System.out.println(subarraygivensum(arr, target));
+    }
+}
