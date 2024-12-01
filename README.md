@@ -1,2 +1,2 @@
 # google-pre-practice-array
-learn Array in dsa sheet
+learn and practice google dsa sheet
