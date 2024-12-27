@@ -1,2 +1,2 @@
 # google-pre-practice-array
-practice google dsa previous year problem 
+practice google dsa previous year
