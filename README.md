@@ -1,2 +1,2 @@
 # google-pre-practice-array
-practice google dsa sheet
+practice google dsa Question set
