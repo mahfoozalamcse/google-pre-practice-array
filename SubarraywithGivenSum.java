@@ -17,6 +17,6 @@ public class SubarraywithGivenSum {
         int arr[] =  { 15, 2, 4, 8, 9, 5, 10, 23};
         int target = 23;
       // int result = subarraygivensum(arr, target);
-       System.out.println(subarraygivensum(arr, target));
+      // System.out.println(subarraygivensum(arr, target));
     }
 }
