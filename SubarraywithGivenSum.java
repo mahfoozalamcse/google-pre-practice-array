@@ -1,6 +1,8 @@
 public class SubarraywithGivenSum {
+    // complete code
+    
     public static void subarraygivensum(int arr[], int target){
-        int temp[] = new int[arr.length];
+       // int temp[] = new int[arr.length];
         int count = 0;
         int sum = 0;
 
@@ -16,7 +18,7 @@ public class SubarraywithGivenSum {
     public static void main(String[] args) {
         int arr[] =  { 15, 2, 4, 8, 9, 5, 10, 23};
         int target = 23;
-      // int result = subarraygivensum(arr, target);
+        subarraygivensum(arr, target);
       // System.out.println(subarraygivensum(arr, target));
     }
 }
