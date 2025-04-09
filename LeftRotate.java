@@ -51,7 +51,13 @@ public class LeftRotate {
         reverse(arr, 0, arr.length-1);
     }
 
-    
+    // method 3
+    public static void rotation3(int arr[], int d){
+       for (int i = 0; i < d; i++) {
+          leftRotateOne(arr);
+       }
+    }
+
 
     // print array
     public static void printArray(int arr[]){
@@ -64,7 +70,8 @@ public class LeftRotate {
    int arr[] = {1, 2, 4, 9};
   // leftRotateOne(arr);
    // rotateByD(arr, 2);
-   rotation2(arr, 2);
+  // rotation2(arr, 2);
+  rotation3(arr, 2);
    printArray(arr);
   }
 }
