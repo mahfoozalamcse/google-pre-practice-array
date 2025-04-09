@@ -32,6 +32,35 @@ public class OperationArray {
         }
     }
 
+    // delete element in the array
+    // due to inplace deletion we return from second last not change last element
+    
+    public static int delete(int arr[], int x){
+    int n = arr.length;
+        int i;
+
+        // Find the index of the first occurrence of x
+        for (i = 0; i < n; i++) {
+            if (arr[i] == x) {
+                break;
+            }
+        }
+
+        // If x is not found, return the original length
+        if (i == n) {
+            return n;
+        }
+
+        // Shift elements to the left to overwrite x
+        for (int j = i; j < n - 1; j++) {
+            arr[j] = arr[j + 1];
+        }
+
+        // The last element is now a duplicate
+        // The "effective" size of the array is reduced by 1
+        return n - 1;
+    }
+
     // print array
     public static void printArray(int arr[]){
         for (int i = 0; i < arr.length; i++) {
@@ -42,19 +71,23 @@ public class OperationArray {
     public static void main(String[] args) {
       int arr[] = new int[5];
       arr[0] = 12;
-      arr[2] = 34;
-      arr[1] = 24;
+      arr[1] = 34;
+      arr[2] = 24;
       arr[3] = 45;
+      arr[4] = 89;
 
-      int currSize = 4;
-      int capcity = 5;
-      int x = 34;
-      int pos = 2;
-      //insert(arr, x);
-      //printArray(arr);
-      insertPos(arr, x, pos, currSize, capcity);
-      printArray(arr);
+    //   int currSize = 4;
+    //   int capcity = 5;
+    //   int x = 34;
+    //   int pos = 2;
+    //   //insert(arr, x);
+    //   //printArray(arr);
+    //   insertPos(arr, x, pos, currSize, capcity);
+    //   printArray(arr);
 
-      serch(arr, 34);
+    //   serch(arr, 34);
+
+    System.out.println(delete(arr,12));
+    printArray(arr);
     }
 }
