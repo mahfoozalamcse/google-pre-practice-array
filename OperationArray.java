@@ -34,7 +34,8 @@ public class OperationArray {
 
     // delete element in the array
     // due to inplace deletion we return from second last not change last element
-    
+    // array passed by value not effect original element
+
     public static int delete(int arr[], int x){
     int n = arr.length;
         int i;
